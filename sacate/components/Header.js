@@ -1,10 +1,11 @@
-import { Text, View } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
+import styles from '../style/styles';
 
 export default function Header() {
   return (
-    <View>
-      <Text>Header</Text>
-    </View>
+    <SafeAreaView style={styles.header}>
+      <Text>Bienvenido, Pedro</Text>
+    </SafeAreaView>
   );
 }
 
