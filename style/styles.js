@@ -1,22 +1,26 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    header: {
-        // height: 70,
-        padding: 10
+  header: {
+    title: "Sacate",
+    headerStyle: {
+      backgroundColor: "black",
     },
-    statuses: {
-        status1: {},
-        status2: {},
-        status3: {},
+    headerTintColor: "white",
+    headerTitleStyle: {
+      fontWeight: "bold",
     },
-    container: {
-        flex: 1,
-      },
-      content: {
-        flex: 1,
-        padding: 20,
-      },
+  },
+  menuHeader: {
+    title: "Menu",
+    headerStyle: {
+      backgroundColor: "black",
+    },
+    headerTintColor: "white",
+    headerTitleStyle: {
+      fontWeight: "bold",
+    },
+  },
 });
 
 export default styles;

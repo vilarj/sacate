@@ -4,44 +4,26 @@ import * as React from "react";
 import { StatusBar } from "react-native";
 import Home from "./screens/Home";
 import Menu from "./screens/Menu";
+import styles from "./style/styles";
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
+      {/* Color of the status bar icons */}
       <StatusBar barStyle="light-content" />
 
+      {/* Routes */}
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{
-            title: "Sacate",
-            headerStyle: {
-              backgroundColor: "black",
-            },
-            headerTintColor: "white",
-            headerTitleStyle: {
-              fontWeight: "bold",
-            },
-          }}
-        />
+        <Stack.Screen name="Home" component={Home} options={styles.header} />
 
         <Stack.Screen
           name="Menu"
           component={Menu}
-          options={{
-            title: "Menu",
-            headerStyle: {
-              backgroundColor: "black",
-            },
-            headerTintColor: "white",
-            headerTitleStyle: {
-              fontWeight: "bold",
-            },
-          }}
+          options={styles.menuHeader}
         />
+        {/* End of routes */}
       </Stack.Navigator>
     </NavigationContainer>
   );
