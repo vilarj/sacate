@@ -1,10 +1,9 @@
 import { MaterialIcons } from "@expo/vector-icons";
 import { Pressable, SafeAreaView } from "react-native";
-import styles from "../style/styles";
 
 const Home = ({ navigation }) => {
   return (
-    <SafeAreaView style={styles.header}>
+    <SafeAreaView>
       <Pressable onPress={() => navigation.navigate("Menu")}>
         <MaterialIcons name="menu-open" size={50} />
       </Pressable>
