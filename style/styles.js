@@ -21,6 +21,27 @@ const styles = StyleSheet.create({
       fontWeight: "bold",
     },
   },
+  statusBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: 10,
+  },
+  hoy: {
+    backgroundColor: "black",
+    borderRadius: 15,
+    padding: 3,
+  },
+  moneda: {
+    backgroundColor: "black",
+    borderRadius: 15,
+    padding: 3,
+  },
+  grupo: {
+    backgroundColor: "black",
+    borderRadius: 15,
+    padding: 3,
+  },
 });
 
 export default styles;

@@ -1,9 +1,9 @@
-import { SafeAreaView, Text } from "react-native";
+import { Text, View } from "react-native";
 
 const Menu = () => {
-  <SafeAreaView>
+  <View>
     <Text>Hi</Text>
-  </SafeAreaView>;
+  </View>;
 };
 
 export default Menu;

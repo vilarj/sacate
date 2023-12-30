@@ -1,13 +1,11 @@
-import { MaterialIcons } from "@expo/vector-icons";
-import { Pressable, SafeAreaView } from "react-native";
+import { View } from "react-native";
+import Status from "../components/Status";
 
 const Home = ({ navigation }) => {
   return (
-    <SafeAreaView>
-      <Pressable onPress={() => navigation.navigate("Menu")}>
-        <MaterialIcons name="menu-open" size={50} />
-      </Pressable>
-    </SafeAreaView>
+    <View style={{ flex: 1 }}>
+      <Status navigation={navigation} />
+    </View>
   );
 };
 
