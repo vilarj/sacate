@@ -1,15 +1,15 @@
-import { Button } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
+import { Pressable, SafeAreaView } from "react-native";
+import styles from "../style/styles";
 
 const Home = ({ navigation }) => {
   return (
-    <Button
-      title="Go to the menu"
-      onPress={() => navigation.navigate("Menu")}
-    />
+    <SafeAreaView style={styles.header}>
+      <Pressable onPress={() => navigation.navigate("Menu")}>
+        <MaterialIcons name="menu-open" size={50} />
+      </Pressable>
+    </SafeAreaView>
   );
 };
 
-const Menu = ({ navigation }) => {
-  return <Text>Menu</Text>;
-};
 export default Home;
