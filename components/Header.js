@@ -1,11 +1,11 @@
-import { SafeAreaView, TouchableOpacity } from 'react-native';
-import styles from '../style/styles';
-import { MaterialIcons } from '@expo/vector-icons';
+import { MaterialIcons } from "@expo/vector-icons";
+import { SafeAreaView, TouchableOpacity } from "react-native";
+import styles from "../style/styles";
 
-export default function Header() {
+const Header = ({ navigation }) => {
   const toggleMenu = () => {
-    console.log("Pressed")
-  }
+    navigation.navigate("Menu");
+  };
 
   return (
     <SafeAreaView style={styles.header}>
@@ -14,4 +14,6 @@ export default function Header() {
       </TouchableOpacity>
     </SafeAreaView>
   );
-}
+};
+
+export default Header;

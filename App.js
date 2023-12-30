@@ -1,16 +1,24 @@
-import { SafeAreaView, Text } from 'react-native';
-import Header from './components/Header';
-import styles from './style/styles';
-import Status from './components/Status';
-import Menu from './components/Menu';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import * as React from "react";
+import Home from "./screens/Home";
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+const App = () => {
   return (
-    <SafeAreaView style={styles.app}>
-      <Header />
-      <Status />
-      <Menu />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            title: "Sacate",
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
+export default App;
