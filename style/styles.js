@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     },
   },
   menuHeader: {
-    title: "Menu",
     headerStyle: {
       backgroundColor: "black",
     },

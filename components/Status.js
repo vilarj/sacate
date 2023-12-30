@@ -12,7 +12,7 @@ export default function Header({ navigation }) {
       </View>
       <View style={styles.hoy}>
         <Button
-          onPress={null}
+          onPress={() => navigation.navigate("History")}
           title="Hoy"
           color="white"
           accessibilityLabel="Hoy"
@@ -20,7 +20,7 @@ export default function Header({ navigation }) {
       </View>
       <View style={styles.moneda}>
         <Button
-          onPress={null}
+          onPress={() => navigation.navigate("Moneda")}
           title="Moneda"
           color="white"
           accessibilityLabel="Moneda"
@@ -29,7 +29,7 @@ export default function Header({ navigation }) {
 
       <View style={styles.grupo}>
         <Button
-          onPress={null}
+          onPress={() => navigation.navigate("Group")}
           title="Grupo"
           color="white"
           accessibilityLabel="Grupo"

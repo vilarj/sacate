@@ -1,8 +1,8 @@
 import { Text, View } from "react-native";
 
 const Menu = () => {
-  <View>
-    <Text>Hi</Text>
+  <View style={{ flex: 1 }}>
+    <Text>Menu</Text>
   </View>;
 };
 
