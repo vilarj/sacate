@@ -6,7 +6,7 @@ export default function Header({ navigation }) {
   return (
     <View style={styles.statusBar}>
       <View>
-        <Pressable onPress={() => navigation.navigate("Menu")}>
+        <Pressable onPress={() => navigation.navigate("Menu2")}>
           <MaterialIcons name="menu-open" size={50} />
         </Pressable>
       </View>

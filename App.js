@@ -22,7 +22,7 @@ const App = () => {
         <Stack.Screen name="Home" component={Home} options={styles.header} />
 
         <Stack.Screen
-          name="Menu"
+          name="Menu2"
           component={Menu}
           options={styles.menuHeader}
         />
