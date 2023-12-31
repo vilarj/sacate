@@ -1,6 +1,7 @@
 import { MaterialIcons } from "@expo/vector-icons";
 import { useState } from "react";
 import { Button, Pressable, View } from "react-native";
+import DatePicker from "react-native-date-picker";
 import { Dropdown } from "react-native-element-dropdown";
 import styles from "../style/styles";
 
@@ -11,7 +12,8 @@ export default function Header({ navigation }) {
   ];
   const [value, setValue] = useState(null);
   const [isFocus, setIsFocus] = useState(false);
-
+  const [date, setDate] = useState(new Date());
+  const [open, setOpen] = useState(false);
   return (
     <View style={styles.statusBar}>
       <View>
@@ -21,10 +23,23 @@ export default function Header({ navigation }) {
       </View>
       <View style={styles.hoy}>
         <Button
-          onPress={() => navigation.navigate("History")}
+          // onPress={() => navigation.navigate("History")}
+          onPress={() => setOpen(true)}
           title="Hoy"
           color="white"
           accessibilityLabel="Hoy"
+        />
+        <DatePicker
+          modal
+          open={open}
+          date={date}
+          onConfirm={(date) => {
+            setOpen(false);
+            setDate(date);
+          }}
+          onCancel={() => {
+            setOpen(false);
+          }}
         />
       </View>
       <View style={styles.moneda}>
