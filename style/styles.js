@@ -41,6 +41,29 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     padding: 3,
   },
+  dropdown: {
+    borderRadius: 8,
+    paddingHorizontal: 24,
+  },
+  label: {
+    position: "absolute",
+    backgroundColor: "white",
+    left: 22,
+    top: 8,
+    zIndex: 999,
+    paddingHorizontal: 8,
+    fontSize: 14,
+  },
+  placeholderStyle: {
+    fontSize: 16,
+  },
+  selectedTextStyle: {
+    fontSize: 16,
+  },
+  iconStyle: {
+    width: 20,
+    height: 20,
+  },
 });
 
 export default styles;
