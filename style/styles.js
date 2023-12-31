@@ -27,17 +27,17 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   hoy: {
-    backgroundColor: "black",
+    backgroundColor: "orange",
     borderRadius: 15,
     padding: 3,
   },
   moneda: {
-    backgroundColor: "black",
+    backgroundColor: "green",
     borderRadius: 15,
     padding: 3,
   },
   grupo: {
-    backgroundColor: "black",
+    backgroundColor: "purple",
     borderRadius: 15,
     padding: 3,
   },
