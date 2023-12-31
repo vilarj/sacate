@@ -4,7 +4,7 @@ import * as React from "react";
 import { StatusBar } from "react-native";
 import Group from "../screens/Group";
 import History from "../screens/History";
-import Home from "../screens/Home";
+import Main from "../screens/Main";
 import Menu from "../screens/Menu";
 import Moneda from "../screens/Moneda";
 import styles from "../style/styles";
@@ -18,8 +18,8 @@ const Navigation = () => {
       <StatusBar barStyle="light-content" />
 
       {/* Routes */}
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} options={styles.header} />
+      <Stack.Navigator initialRouteName="Main">
+        <Stack.Screen name="Main" component={Main} options={styles.header} />
 
         <Stack.Screen
           name="Menu"

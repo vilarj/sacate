@@ -5,7 +5,7 @@ import DatePicker from "react-native-date-picker";
 import { Dropdown } from "react-native-element-dropdown";
 import styles from "../style/styles";
 
-export default function Header({ navigation }) {
+const Header = ({ navigation }) => {
   const monedaData = [
     { label: "Pesos", value: "1" },
     { label: "Dollars", value: "2" },
@@ -76,4 +76,6 @@ export default function Header({ navigation }) {
       </View>
     </View>
   );
-}
+};
+
+export default Header;
