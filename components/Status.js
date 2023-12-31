@@ -8,7 +8,7 @@ import styles from "../style/styles";
 const Header = ({ navigation }) => {
   const monedaData = [
     { label: "Pesos", value: "1" },
-    { label: "Dollars", value: "2" },
+    { label: "Dolar", value: "2" },
   ];
   const [value, setValue] = useState(null);
   const [isFocus, setIsFocus] = useState(false);
