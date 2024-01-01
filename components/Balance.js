@@ -11,12 +11,13 @@ import styles from "../style/styles";
  */
 const Balance = () => {
   const monto = 0;
+
   return (
     <View>
       <View style={styles.balance}>
         {monto >= 0 ? (
           <View>
-            <FontAwesome name="dollar" size={24} color="green" />
+            <FontAwesome name="dollar" size={50} color="green" />
 
             <View>
               <Text>{monto}</Text>
@@ -24,7 +25,7 @@ const Balance = () => {
           </View>
         ) : (
           <View>
-            <FontAwesome name="dollar" size={24} color="red" />
+            <FontAwesome name="dollar" size={50} color="red" />
 
             <View>
               <Text>{monto}</Text>
@@ -36,11 +37,11 @@ const Balance = () => {
       <View>
         {monto >= 0 ? (
           <View>
-            <MaterialIcons name="trending-up" size={24} color="green" />
+            <MaterialIcons name="trending-up" size={30} color="green" />
           </View>
         ) : (
           <View>
-            <MaterialIcons name="trending-down" size={24} color="red" />
+            <MaterialIcons name="trending-down" size={30} color="red" />
           </View>
         )}
       </View>

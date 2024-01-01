@@ -64,7 +64,12 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
   },
-  balance: {},
+  balance: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: 10,
+  },
 });
 
 export default styles;
